@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="ren">
+    <meta name="keywords" content="just_test">
+    <title>011100100110000101101110011001000110111101101101</title>
+    <style>
+        body {
+            background-color: rgb(58, 57, 57);
+        }
+
+        p {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <script>
+        function startScroll(interval) {
+            setInterval("autoScroll()", interval);
+        }
+        function autoScroll() {
+            window.scrollBy(0, 20);
+        }
+    </script>
+</head>
+
+<body onload="startScroll(100)">
+    <p>
+        <script>
+            function get_random() {
+                var rand = [];
+                var a = 0;
+                while (rand.length < 999) {
+                    a = Math.floor((Math.random() * 10));
+                    if (a == 0 || a == 1) {
+                        rand.push(a);
+                    }
+                }
+                document.write(rand.join('') + '<br/>');
+            }
+            for (b = 0; b < 999; b++) {
+                get_random();
+            }
+            function startScroll(interval) {
+                setInterval("autoScroll()", interval);
+            }
+        </script>
+    </p>
+</body>
+
+</html>
